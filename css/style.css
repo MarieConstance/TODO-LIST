@@ -1,0 +1,31 @@
+:root {
+  --ma-couleur-principale: #124660;
+  --ma-couleur-bouton: #1b9476;
+  --mon--autre--couleur: #8bd59e;
+  --ma--couleur--text: #ffff;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+  font-family: "Montserrat Alternates", sans-serif;
+}
+.entete {
+  width: 100%;
+  height: 5rem;
+  background-color: rgba(62, 200, 241, 0.806);
+}
+.corps {
+  width: 100%;
+  height: 100vh;
+}
+.corps .cadreimag {
+  background-color: rgb(235, 181, 81);
+  width: 100%;
+  height: 100vh;
+  align-items: center;
+  justify-content: center;
+}
