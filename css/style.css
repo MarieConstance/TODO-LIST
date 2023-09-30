@@ -1,10 +1,3 @@
-:root {
-  --ma-couleur-principale: #124660;
-  --ma-couleur-bouton: #1b9476;
-  --mon--autre--couleur: #8bd59e;
-  --ma--couleur--text: #ffff;
-}
-
 * {
   margin: 0;
   padding: 0;
@@ -13,19 +6,160 @@
   list-style: none;
   font-family: "Montserrat Alternates", sans-serif;
 }
-.entete {
-  width: 100%;
-  height: 5rem;
-  background-color: rgba(62, 200, 241, 0.806);
+body {
+  font-family: "Open Sans", sans-serif;
 }
-.corps {
-  width: 100%;
-  height: 100vh;
+a {
+  text-decoration: none;
 }
-.corps .cadreimag {
-  background-color: rgb(235, 181, 81);
-  width: 100%;
-  height: 100vh;
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.container {
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+}
+/* Small */
+@media (min-width: 768px) {
+  .container {
+    width: 750px;
+  }
+}
+/* Medium */
+@media (min-width: 992px) {
+  .container {
+    width: 970px;
+  }
+}
+/* Large */
+@media (min-width: 1200px) {
+  .container {
+    width: 1170px;
+  }
+}
+/* End Global Rules */
+
+/* Start Landing Page */
+.landing-page header {
+  min-height: 80px;
+  display: flex;
+}
+@media (max-width: 767px) {
+  .landing-page header {
+    min-height: auto;
+    display: initial;
+  }
+}
+.landing-page header .container {
+  display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: space-between;
+}
+@media (max-width: 767px) {
+  .landing-page header .container {
+    flex-direction: column;
+    justify-content: center;
+  }
+}
+.landing-page header .logo {
+  color: #E89430;
+  font-style: italic;
+  text-transform: uppercase;
+  font-size: 20px;
+}
+@media (max-width: 767px) {
+  .landing-page header .logo {
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+}
+.landing-page header .links {
+  display: flex;
+  align-items: center;
+}
+@media (max-width: 767px) {
+  .landing-page header .links {
+    text-align: center;
+    gap: 10px;
+  }
+}
+.landing-page header .links li {
+  margin-left: 30px;
+  color: #5d5d5d;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.landing-page header .links li a {
+    color: #5d5d5d;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+  .landing-page header .links li a:hover {
+    color: #E89430;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+@media (max-width: 767px) {
+  .landing-page header .links li {
+    margin-left: auto;
+  }
+}
+.landing-page header .links li:last-child {
+  border-radius: 20px;
+  padding: 10px 20px;
+  color: #fff;
+  background-color: #e89430;
+}
+.landing-page header .links li:not(:last-child):hover {
+  color: #e89430;
+}
+.landing-page .content .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 140px;
+  min-height: calc(100vh - 80px);
+}
+@media (max-width: 767px) {
+  .landing-page .content .container {
+    gap: 0;
+    min-height: calc(100vh - 101px);
+    justify-content: center;
+    flex-direction: column-reverse;
+  }
+}
+@media (max-width: 767px) {
+  .landing-page .content .info {
+    text-align: center;
+    margin-bottom: 15px;
+  }
+}
+.landing-page .content .info h1 {
+  color: #5d5d5d;
+  font-size: 44px;
+}
+.landing-page .content .info p {
+  margin: 0;
+  line-height: 1.6;
+  font-size: 15px;
+  color: #5d5d5d;
+}
+.landing-page .content .info button {
+  border: 0;
+  border-radius: 20px;
+  padding: 12px 30px;
+  margin-top: 30px;
+  cursor: pointer;
+  color: #fff;
+  background-color: #e89430;
+}
+.landing-page .content .info button a{
+    color: white;
+}
+.landing-page .content .image img {
+  max-width: 100%;
 }
